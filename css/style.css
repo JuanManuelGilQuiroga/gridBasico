@@ -3,7 +3,112 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 body{
     background: var(--color-primary);
+}
+.container{
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: 
+    "menu menu menu menu menu menu menu menu menu menu menu menu"
+    "notification notification notification notification sales sales sales sales sales sales balance balance"
+    "notification notification notification notification sales sales sales sales sales sales balance balance"
+    "week week week week sales sales sales sales sales sales balance balance"
+    "week week week week sales sales sales sales sales sales devs devs"
+    "week week week week sales sales sales sales sales sales devs devs"
+    "product product product product product timeline timeline timeline timeline timeline timeline timeline"
+    "product product product product product timeline timeline timeline timeline timeline timeline timeline"
+    "product product product product product timeline timeline timeline timeline timeline timeline timeline"
+    ;
+    width: 800px;
+    height: 600px;
+    margin: 15px auto;
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    box-shadow: var(--color-shadows)
+}
+.container > div{
+    background: var(--color-secundary);
+    border-radius: 5px;
+}
+
+/*/ITEM 1/*/
+.item1{
+    background: red;
+    grid-area: menu;
+}
+.item1 div{
+    display: flex;
+    width: 50%;
+    background: rgb(142, 142, 191);
+}
+
+.ulBuscador{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.item1 div ul li{
+    list-style: none;
+}
+.item1 div ul li a{
+    text-decoration: none;
+}
+
+
+
+.item2{
+    background: blue;
+    grid-area: notification;
+}
+.item3{
+    background: yellow;
+    grid-area: sales;
+}
+.item4{
+    background: pink;
+    grid-area: balance;
+}
+.item5{
+    background: salmon;
+    grid-area: week;
+}
+.item6{
+    background: rgb(41, 133, 133);
+    grid-area: devs;
+}
+.item7{
+    background: rgb(189, 63, 84);
+    grid-area: product;
+}
+.item8{
+    background: green;
+    grid-area: timeline;
+}
+@media (width < 800px){
+    .container{
+        width: 100%;
+        margin: 0;
+        padding: 2px 5px;
+        grid-gap: 5px 10px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "menu"
+        "sales"
+        "balance"
+        "week"
+        "devs"
+        "product"
+        "notification"
+        "timeline";
+    }
+    .container > div{
+        border-radius: none;
+    };
 }
