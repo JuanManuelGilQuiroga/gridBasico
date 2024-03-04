@@ -116,11 +116,39 @@ body {
 }
 
 
-
+/*/ITEM2/*/
 .item2 {
     background: blue;
     grid-area: notification;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+.div1Item2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.imgItem2{
+    display: flex;
+    align-items: center;
+}
+.imgItem2 > *{
+    width: 15%;
+}
+.circleItem2{
+    background: rgb(0, 0, 0);
+    height: 100%;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circleItem2 > p{
+    font-weight: 700;
+    color: var(--color-secundary);
+}
+
 
 .item3 {
     background: yellow;
