@@ -1,28 +1,31 @@
 @import url(variables.css);
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
 }
-body{
+
+body {
     background: var(--color-primary);
 }
-.container{
+
+.container {
     display: grid;
     grid-gap: 8px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(9, 1fr);
-    grid-template-areas: 
-    "menu menu menu menu menu menu menu menu menu menu menu menu"
-    "notification notification notification notification sales sales sales sales sales sales balance balance"
-    "notification notification notification notification sales sales sales sales sales sales balance balance"
-    "week week week week sales sales sales sales sales sales balance balance"
-    "week week week week sales sales sales sales sales sales devs devs"
-    "week week week week sales sales sales sales sales sales devs devs"
-    "product product product product product timeline timeline timeline timeline timeline timeline timeline"
-    "product product product product product timeline timeline timeline timeline timeline timeline timeline"
-    "product product product product product timeline timeline timeline timeline timeline timeline timeline"
+    grid-template-areas:
+        "menu menu menu menu menu menu menu menu menu menu menu menu"
+        "notification notification notification notification sales sales sales sales sales sales balance balance"
+        "notification notification notification notification sales sales sales sales sales sales balance balance"
+        "week week week week sales sales sales sales sales sales balance balance"
+        "week week week week sales sales sales sales sales sales devs devs"
+        "week week week week sales sales sales sales sales sales devs devs"
+        "product product product product product timeline timeline timeline timeline timeline timeline timeline"
+        "product product product product product timeline timeline timeline timeline timeline timeline timeline"
+        "product product product product product timeline timeline timeline timeline timeline timeline timeline"
     ;
     width: 800px;
     height: 600px;
@@ -32,83 +35,144 @@ body{
     border-radius: 5px;
     box-shadow: var(--color-shadows)
 }
-.container > div{
+
+.container>div {
     background: var(--color-secundary);
     border-radius: 5px;
 }
 
 /*/ITEM 1/*/
-.item1{
+.item1 {
     background: red;
     grid-area: menu;
-}
-.item1 div{
     display: flex;
-    width: 50%;
-    background: rgb(142, 142, 191);
 }
 
-.ulBuscador{
+.item1>div {
+    display: flex;
+    width: 50%;
+}
+
+.ulBuscador {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
-.item1 div ul li{
+
+.item1 div ul li {
     list-style: none;
 }
-.item1 div ul li a{
+
+.item1 div ul li a {
     text-decoration: none;
+}
+.search{
+    border-radius: 5px;
+    background: rgb(226, 226, 226);
+}
+
+.div2Item1 {
+    background: yellowgreen;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconsItem1 {
+    outline: 1px solid black;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.iconsItem1 > i{
+    font-size: 1.5em;
+}
+.profile {
+    outline: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    outline: 1px green solid;
+}
+
+.user>* {
+    font-size: small;
+    text-align: right;
+}
+
+.profileImage {
+
+    width: 15%;
+    border-radius: 100px;
 }
 
 
 
-.item2{
+.item2 {
     background: blue;
     grid-area: notification;
 }
-.item3{
+
+.item3 {
     background: yellow;
     grid-area: sales;
 }
-.item4{
+
+.item4 {
     background: pink;
     grid-area: balance;
 }
-.item5{
+
+.item5 {
     background: salmon;
     grid-area: week;
 }
-.item6{
+
+.item6 {
     background: rgb(41, 133, 133);
     grid-area: devs;
 }
-.item7{
+
+.item7 {
     background: rgb(189, 63, 84);
     grid-area: product;
 }
-.item8{
+
+.item8 {
     background: green;
     grid-area: timeline;
 }
-@media (width < 800px){
-    .container{
+
+@media (width < 800px) {
+    .container {
         width: 100%;
         margin: 0;
         padding: 2px 5px;
         grid-gap: 5px 10px;
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "menu"
-        "sales"
-        "balance"
-        "week"
-        "devs"
-        "product"
-        "notification"
-        "timeline";
+        grid-template-areas:
+            "menu"
+            "sales"
+            "balance"
+            "week"
+            "devs"
+            "product"
+            "notification"
+            "timeline";
     }
-    .container > div{
+
+    .container>div {
         border-radius: none;
-    };
+    }
+
+    ;
 }
