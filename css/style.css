@@ -183,6 +183,42 @@ body {
 .item4 {
     background: pink;
     grid-area: balance;
+    display: flex;
+}
+.mainItem4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.mainItem4 p{
+    font-size: smaller
+}
+.div1Item4{
+    /*/outline: 1px solid black;/*/
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-left: 10%;
+    border-radius: 5px;
+}
+.div2Item4{
+    background: #aef7ae;
+    /*/outline: 1px solid black;/*/
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-left: 10%;
+    border-radius: 5px;
+}
+.div3Item4{
+    /*/outline: 1px solid black;/*/
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-left: 10%;
+    border-radius: 5px;
 }
 
 
