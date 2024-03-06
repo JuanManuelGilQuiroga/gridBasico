@@ -121,6 +121,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 5%;
 }
 .div1Item2{
     height: 90%;
@@ -301,8 +302,56 @@ body {
 }
 
 .item6 {
-    background: rgb(41, 133, 133);
+    background: #CEED3E;
     grid-area: devs;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5%;
+}
+.whiteDiv{
+    border: 1px solid black;
+    width: 70%;
+    background: white;
+    padding: 5%;
+    border-radius: 2px;
+}
+.whiteDiv p{
+    font-size: xx-small;
+    font-weight: 800;
+}
+.iconsItem6{
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.imgItem6{
+    width: 50%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.circleItem6{
+    outline: 1px solid green;
+    background: rgb(0, 0, 0);
+    margin: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circleItem6 > p{
+    font-weight: 700;
+    color: var(--color-secundary);
+}
+.imgItem6 > *{
+    width: 50%;
+}
+.iconsItem6 > i{
+    font-size: 1.5em;
 }
 
 .item7 {
