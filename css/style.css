@@ -313,6 +313,11 @@ body {
 .item8 {
     background: green;
     grid-area: timeline;
+    display: flex;
+    justify-content: center;
+}
+.item8 img{
+    width: 80%;
 }
 
 @media (width < 800px) {
