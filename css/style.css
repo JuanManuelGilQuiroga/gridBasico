@@ -176,8 +176,33 @@ body {
 .item3 {
     background: yellow;
     grid-area: sales;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5%;
 }
-
+.item3 h2{
+    color: #081F37
+}
+.div1Item3{
+    display: flex;
+    justify-content: space-between;
+}
+.div1Item3 > p{
+    color: grey;
+}
+.div2Item3{
+    display: flex;
+}
+.div2Item3 > p{
+    color: grey;
+}
+.div2Item3 > i{
+    font-weight: 700;
+}
+.item3 h3{
+    color: #CEED3E;
+}
 
 
 .item4 {
