@@ -37,13 +37,12 @@ body {
 }
 
 .container>div {
-    background: var(--color-secundary);
     border-radius: 5px;
 }
 
 /*/ITEM 1/*/
 .item1 {
-    background: red;
+    background: var(--color-secundary);
     grid-area: menu;
     display: flex;
 }
@@ -74,7 +73,9 @@ body {
 }
 
 .div2Item1 {
-    background: yellowgreen;
+    background: linear-gradient(to right, var(--color-cuarto), var(--color-tercero));
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     display: flex;
     justify-content: space-between;
 }
@@ -115,13 +116,14 @@ body {
 
 /*/ITEM2/*/
 .item2 {
-    background: rgb(135, 216, 249);
+    background: var(--color-cuarto);
     grid-area: notification;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 5%;
+    border-radius: 5px;
 }
 .div1Item2{
     height: 90%;
@@ -129,57 +131,66 @@ body {
     justify-content: space-evenly;
     flex-direction: column;
 }
+.div1_1Item2{
+    display: flex;
+    justify-content: space-between;
+}
 .imgItem2{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
-.imgItem2 > *{
-    width: 15%;
+.img1Item2{
+    width: 35%;
+    display: flex;
 }
-.imgItem2 > img{
+.img1Item2 > img{
+    width: 30%;
     margin-left: -5px;
 }
+.imgItem2 > div{
+    align-self: flex-end;
+}
 .circleItem2{
-    background: rgb(0, 0, 0);
-    height: 100%;
-    border-radius: 100px;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    background: black;
     margin-left: -5px;
 }
 .circleItem2 > p{
     font-weight: 700;
     color: var(--color-secundary);
 }
-.div2Item2{
-    height: 80%;
-    width: 31%;
+.img2Item2{
+    height: 100%;
+    width: 10%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-right: 5%
-}
-.div2Item2 > i{
-    display: flex;
-    align-self: flex-end;
+    justify-content: center;
+
 }
 .circleRightItem2{
-    background: rgb(0, 0, 0);
-    height: 32%;
-    border-radius: 100px;
+    width: 100%;
+    border: 1px solid black;
+    background: black;
+    border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .circleRightItem2 > p{
+
     font-weight: 700;
     color: var(--color-secundary);
 }
 
 /*/ITEM3/*/
 .item3 {
-    background: yellow;
+    background: var(--color-secundary);
     grid-area: sales;
     display: flex;
     flex-direction: column;
@@ -206,12 +217,12 @@ body {
     font-weight: 700;
 }
 .item3 h3{
-    color: #d7f065;
+    color: var(--color-tercero);
 }
 
 
 .item4 {
-    background: pink;
+    background: var(--color-secundary);
     grid-area: balance;
     display: flex;
 }
@@ -254,7 +265,7 @@ body {
 
 /*/ITEM5/*/
 .item5 {
-    background: salmon;
+    background: var(--color-secundary);
     grid-area: week;
     display: flex;
     flex-direction: column;
@@ -265,7 +276,6 @@ body {
     margin: 0;
 }
 .div1Item5{
-    border: 1px solid black;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -282,24 +292,19 @@ body {
 }
 .divCircles{
     height: 80%;
-    width: 25%;
+    width: 30%;
     display: flex;
 }
-.divCircles div{
-    width: 50%;
-    border: 1px solid black;
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.chartCircle i{
+    margin-right: 5px;
+    padding: 7px;
+    border-radius: 100%;
+    background: var(--color-tercero);
 }
-.chartCircle{
-    background: rgb(144, 255, 129);
-}
-.arrowCircle{
-    background: rgb(135, 216, 249);
-}
-.arrowCircle > i{
+.arrowCircle i{
+    padding: 3px;
+    border-radius: 100%;
+    background: var(--color-cuarto);
     font-size: 1.5em;
     transform: rotate(45deg);
 
@@ -318,9 +323,9 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding: 5%;
+    border-radius: 5px;
 }
 .whiteDiv{
-    border: 1px solid black;
     width: 70%;
     background: white;
     padding: 5%;
@@ -331,7 +336,6 @@ body {
     font-weight: 800;
 }
 .iconsItem6{
-    border: 1px solid black;
     width: 100%;
     display: flex;
     align-items: center;
@@ -339,21 +343,14 @@ body {
 }
 .imgItem6{
     width: 50%;
-    border: 1px solid black;
     display: flex;
     align-items: center;
     padding: 0;
 }
-.circleItem6{
-    outline: 1px solid green;
-    background: rgb(0, 0, 0);
-    margin: 2;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.circleItem6 > p{
+
+.imgItem6 > p{
+    background: black;
+    border-radius: 100%;
     font-weight: 700;
     color: var(--color-secundary);
 }
@@ -366,7 +363,7 @@ body {
 }
 
 .item7 {
-    background: rgb(189, 63, 84);
+    background: var(--color-secundary);
     grid-area: product;
     display: flex;
     flex-direction: column;
@@ -381,7 +378,7 @@ body {
 }
 .div1Item7 > i{
     font-size: xx-large;
-    color: #d7f065;
+    color: var(--color-tercero);
     background: black;
     border-radius: 10px;
     height: 50%;
@@ -394,7 +391,7 @@ body {
     background: #fff391;
 }
 .div2Two{
-    background: #d7f065;
+    background: var(--color-tercero);
 }
 
 .div2Item7{
@@ -434,7 +431,7 @@ body {
 .div3One div{
     width: 30%;
     border: 1px solid black;
-    border-radius: 100px;
+    border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -452,14 +449,16 @@ body {
 }
 .div3Two div{
     width: 50%;
-    border: 1px solid black;
     border-radius: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.div3Two2{
-    background: #d7f065;
+.div3Two div:first-child{
+    border: 1px solid black;
+}
+.div3Two2{ 
+    background: var(--color-tercero);
 }
 .div3Two2 i{
     font-size: 1.5em;
@@ -467,7 +466,7 @@ body {
 }
 
 .item8 {
-    background: green;
+    background: var(--color-secundary);
     grid-area: timeline;
     display: flex;
     justify-content: center;
@@ -476,7 +475,7 @@ body {
     width: 80%;
 }
 
-@media (width < 800px) {
+@media (width < 900px) {
     .container {
         width: 100%;
         margin: 0;
